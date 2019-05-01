@@ -1,0 +1,26 @@
+{
+  "name": "irac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortvif/irac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mortvif/irac/issues"
+  },
+  "homepage": "https://github.com/mortvif/irac#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "ws": "^6.2.1",
+    "xml-js": "^1.6.11"
+  }
+}
