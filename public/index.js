@@ -50,7 +50,7 @@ function sendMetadata(){
     metadata.resolutions = document.getElementById("resolutions").value;
     metadata.bitrates = document.getElementById("bitrates").value;
     metadata.name = document.getElementById("name").value;
-
+    metadata.method = document.getElementById("selected_method").value;
     ws.send(JSON.stringify(metadata));
 }
 

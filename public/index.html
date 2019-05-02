@@ -24,6 +24,12 @@
     4. Introduzca el nombre con el que pasará a estar disponible el video
     <input type="text" id="name" placeholder="Nombre" />
     <br>
+    5. Seleccione el método para realizar la conversion
+    <select id="selected_method">
+        <option value="ffmpeg">FFMPEG</option>
+        <option value="mp4box">FFMPEG+MP4BOX</option>
+    </select>
+    <br>
     5. Pulse para convertir:
     <input type="button" value="Upload" onclick="connectWS()" />
     <br>
@@ -35,6 +41,5 @@
     <div id="video-element">
 
     </div>
-
 </body>
 </html>
