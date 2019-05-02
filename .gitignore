@@ -60,6 +60,9 @@ typings/
 # next.js build output
 .next
 
-.mp4
-.m4s
-.mpd
+*.mp4
+*.m4s
+*.mpd
+
+videos/
+tmp/

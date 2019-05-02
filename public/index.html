@@ -6,14 +6,35 @@
     <title>IRAC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
     <script src="index.js"></script>
 </head>
 <body>
     <h1>Trabajo grupo IRAC</h1>
-    <h2>File Upload</h2>
-    Select file
+    <h2>Conversión y subida de video</h2>
+    1. Seleccione el archivo a convertir:
     <input type="file" id="filename" />
     <br>
+    2. Seleccione las resoluciones a convertir separadas por comas. Formato: "nfilasxncolumnas, nfilasxncolumnas..."
+    <input type="text" id="resolutions" placeholder="Resoluciones"/>
+    <br>
+    3. Seleccione los bitrates a convertir separados por comas. Formato: "100k, 300k, 1500k..."
+    <input type="text" id="bitrates" placeholder="Bitrates" />
+    <br>
+    4. Introduzca el nombre con el que pasará a estar disponible el video
+    <input type="text" id="name" placeholder="Nombre" />
+    <br>
+    5. Pulse para convertir:
     <input type="button" value="Upload" onclick="connectWS()" />
+    <br>
+    <h2>Visualización de videos disponibles</h2>
+    <input type="button" value="Obtener videos disponibles" onclick="getAvailable()"/>
+    <select id="selected_video">
+    </select>
+    <input type="button" value="Ver video seleccionado" onclick="playVideo()"/>
+    <div id="video-element">
+
+    </div>
+
 </body>
 </html>
