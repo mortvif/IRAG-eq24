@@ -80,7 +80,7 @@ function playVideo(){
     player = dashjs.MediaPlayer().create();
     player.initialize(document.querySelector("#video-player"), url, true);
     interval = setInterval(() => {
-        var info = JSON.stringify(player.getBitrateInfoListFor("video")[0]);
+        var info = JSON.stringify(player.getBitrateInfoListFor("video"));
         document.getElementById("play-info").innerHTML = info;
         console.log(info)
     }, 500)
