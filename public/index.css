@@ -1,0 +1,138 @@
+body{
+    background-color: #fff;
+    padding: 1rem;
+}
+
+h1 {
+    color: #111;
+    font-family: 'Old Standard TT';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+h1:before {
+    background: #F8CA00;
+    content: '';
+    display: block;
+    height: 4px;
+    margin: 0 auto 44px;
+    width: 50px;
+}
+
+.grupo {
+    margin-top: -25px;
+    color: #111;
+    font-family: 'Alegreya Sans';
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+.grupo b{
+    font-family: 'Old Standard TT';
+}
+
+h2 {
+    color: #111;
+    font-family: 'Old Standard TT';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+u {
+    border-bottom: 4px solid #F8CA00;
+    color: #333;
+    text-decoration: none;
+}
+
+u:hover {
+    border-bottom: 4px solid #ddd;
+    color: #333;
+}
+
+ol {
+  list-style: none;
+  counter-reset: counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+ol li {
+  counter-increment: counter;
+  display: flex;
+  font-family: 'Alegreya Sans';
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 50%;
+  margin-bottom: 0.5rem;
+}
+ol li::before {
+  content: "0" counter(counter);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  font-family: 'Abril Fatface', serif;
+  line-height: 1;
+}
+
+.box{
+  display: inline-block;
+  margin: 0 0 0 6px;
+  padding: 2px 12px;
+  border: 1px solid #F8CA00;
+  border-radius: 3px;
+  font: normal normal bold 16px/normal "Alegreya Sans", Courier, monospace;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 0 0 14px;
+  padding: 8px 20px;
+  border: 1px solid #F8CA00;
+  border-radius: 3px;
+  font: normal normal bold 16px/normal "Alegreya Sans", Courier, monospace;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 1px;
+  background: #F8CA00;
+  color: #fff;
+}
+.btn:hover{
+    background: #fff;
+    color: #333;
+}
+
+input[type='file'] {
+  color: transparent;
+}
+
+.inputfile::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.inputfile::before {
+  content: 'Seleccionar archivo';
+  display: inline-block;
+  background: #F8CA00;
+  border: 1px solid #F8CA00;
+  border-radius: 3px;
+  margin: 0 0 0 14px;
+  padding: 8px 20px;
+  color: #fff;
+  font: normal normal bold 16px/normal "Alegreya Sans", Courier, monospace;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.inputfile:hover::before {
+  background: #fff;
+  color: #333;
+}
