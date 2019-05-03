@@ -147,7 +147,6 @@ wss.on("connection", (ws) => {
                                 ws.send("Video transcoding failed!");
                                 console.log(error)
                             })
-
                     }
                 }
             })
